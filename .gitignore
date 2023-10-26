@@ -17,3 +17,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/nbproject/private/
+.settings/
+.project
+.buildpath

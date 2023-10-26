@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LessonController;
 use App\Http\Controllers\BranchController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MainController;
@@ -33,4 +34,5 @@ Route::prefix("branch")->group(function (){
     Route::get('/{branchId}',[BranchController::class,"showBranchPage"])->name("branchPage");
     Route::post('/{branchId}/createLesson',[BranchController::class,"createLesson"]);
     Route::delete('/{branchId}/deleteLesson/{lessonId}',[BranchController::class,"deleteLesson"]);
+    Route::get('/{branchId}/lesson/{lessonId}',[LessonController::class,"showLesson"]);
 })->middleware("auth");
