@@ -1,4 +1,4 @@
-import ttimg from "./res/tooltip.png"
+import ttimg from "../res/tooltip.png"
 import {Tooltip} from "react-tooltip";
 
 export default function MyTooltip({id,tooltip,place}){

@@ -19,7 +19,7 @@ export default function MainLayout({children}){
 
         <div className=" flex flex-col justify-between h-screen">
             <Header user={props.auth.user.name}/>
-            <div className="flex h-4/6">
+            <div className="flex justify-center h-4/6">
                 {children}
             </div>
             <Popup text={textPopup}
